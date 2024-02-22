@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+input, textarea, select {
+  outline: 0;
+  border: none;
+  resize: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+/* custom utility classes */
+ .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+.navbar {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.navbar .navbar-brand {
+  font-size: 2.4rem;
+}
+.navbar .navbar-collapse .navbar-search {
+  padding: 4px;
+  margin-left: 32px;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.navbar .navbar-collapse .navbar-search .form-control {
+  width: 100%;
+  padding: 0 16px;
+  color: rgba(0, 0, 0, 0.8);
+  caret-color: #F94E30;
+}
+.navbar .navbar-collapse .navbar-search .form-control::placeholder {
+  font-size: 13.5px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.5px;
+}
+.navbar .navbar-collapse .navbar-search .search-btn {
+  background-color: #F94E30;
+  width: 60px;
+  height: 32px;
+}
+@media screen and (max-width: 576px) {
+  .navbar .navbar-collapse .navbar-search {
+    display: none;
+  }
+}
+.navbar .navbar-collapse .navbar-nav {
+  margin-left: 32px;
+  margin-top: 8px;
+}
+@media screen and (max-width: 992px) {
+  .navbar .navbar-collapse .navbar-nav {
+    display: none;
+  }
+}
+.navbar .navbar-cart {
+  margin-left: 32px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+.navbar .navbar-cart .cart-btn {
+  position: relative;
+}
+.navbar .navbar-cart .cart-btn .cart-items-value {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #F94E30;
+  padding: 0 0.5rem;
+  width: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .navbar-cart .cart-btn:hover .cart-modal {
+  opacity: 1;
+  visibility: visible;
+}

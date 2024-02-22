@@ -1,0 +1,22 @@
+.title-md::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background-color: #F94E30;
+}
+
+.header {
+  background: rgb(249, 78, 48);
+  background: linear-gradient(180deg, rgb(249, 78, 48) 0%, rgb(255, 100, 51) 100%);
+}
+@media screen and (max-width: 992px) {
+  .header .header-cnt-top {
+    flex-direction: column;
+  }
+  .header .header-cnt-top .header-cnt-top-l {
+    margin-bottom: 4px;
+  }
+}
